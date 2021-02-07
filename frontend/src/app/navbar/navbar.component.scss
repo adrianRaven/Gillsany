@@ -1,0 +1,324 @@
+body, h1, h2, h3 ,h4, ul{
+    font-family: "Montserrat";
+}
+.navbar{
+  background: transparent!important; 
+  padding-left: 60px  ;
+  padding-right: 60px;
+}
+
+.btn-outline-success{
+    border-color: whitesmoke;
+    color: whitesmoke;
+    background-color: transparent!important;
+}
+
+.nav-item .nav-link{
+    color: whitesmoke;
+    padding-right: 18px;
+}
+
+.nav-item .nav-link:hover{
+    color: #FFD100;
+}
+
+.nav-item .nav-link:hover{
+    color: #FFD100;
+}
+.nav-link{
+    color: whitesmoke;
+}
+html{
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+}
+
+header{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: background-color .5s ease;
+  z-index: 1000;
+}
+
+.container{
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.nav{
+  display: flex;
+  border-bottom: 2px solid rgba(255,255,255,.05);
+  transition: height .5s ease;
+}
+
+.nav-link{
+  margin: 0 1rem;
+  position: relative;
+}
+
+.nav-link::after{
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .5s ease;
+}
+
+.nav-link:hover::after{
+  transform: scaleX(1);
+}
+
+#nav-cta{
+  display: inline-block;
+  background-color: #fff;
+  color: #313131;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  transition: background-color .5s ease;
+}
+
+#nav-cta:hover{
+  background-color: #d3d3d3;
+}
+
+
+/*Apply styles after scroll*/
+.scrolling-active{
+  background-color: #fff!important;
+  box-shadow:  #fff!important;  
+}
+
+.scrolling-active .nav{
+  height: 6.6rem;
+  background: #012169!important;
+  color: #fff;
+}
+
+.scrolling-active .nav a{
+  color: #fdfdfd!important;
+}
+
+.scrolling-active #nav-cta{
+  background-color: #313131!important;
+  color: #fff!important;
+}
+
+
+@media only screen and (max-width : 992px) {
+  .carousel-inner {
+    height: auto!important;
+  }
+
+  form{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .navbar-collapse{
+    margin: 0px;
+    width: 100%;
+    padding-bottom: 25px;
+    overflow-y: auto;
+    background-color: #012169!important;;
+  }
+
+  .navbar-collapse.show{
+    visibility: visible;
+    transition: translate(-100%);
+    height: 50%;
+  }
+}
+
+
+@media only screen and (max-width : 991px) {
+.navbar{
+  background-color: #012169!important;
+}
+}
+
+.white{
+  color: #fdfdfd!important;
+}
+//productos
+
+body
+{
+    font-size: 16px;
+    color: #292929;
+    line-height: 1.7em;
+    font-weight: 400;
+    background: #F0F0F0;
+    font-family: "Didact Gothic", sans-serif;
+    
+}
+
+.section-bg {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    background: #F0F0F0;
+}
+
+.section-title {
+    margin-bottom: 25px;
+}
+
+.section-title h2 {
+    position: relative;
+    font-size: 32px;
+    line-height: 1.4;
+    font-weight: 700;
+    letter-spacing: 1px;
+    z-index: 1;
+    text-transform: capitalize;
+    display: inline-block;
+    font-family: "Didact Gothic", sans-serif;
+}
+
+.single-product {
+    box-shadow: inset -2px -2px 8px white,
+     inset -2px -2px 12px rgba(255, 255, 255, 0.5),
+      inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+       inset 2px 2px 8px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 50px;
+}
+
+.single-product .product-thumb {
+    margin-bottom: 20px;
+}
+
+.single-product .product-title {
+    margin-bottom: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.single-product .product-title h3 {
+    font-family: "Didact Gothic", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.single-product .product-title h3 a {
+    color: #292929;
+    text-decoration: none;
+}
+
+.single-product .product-title h3 a:hover {
+    color: #7289ab;
+}
+
+.single-product:hover {
+    box-shadow: -2px -2px 8px white,
+     -2px -2px 12px rgba(255, 255, 255, 0.5),
+      inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+       2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;
+}
+
+.product-btns
+{
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    transition: .3s;
+    color: #292929;
+}
+
+.btn-small {
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 14px 32px;
+    border-radius: 50px;
+    text-decoration: none;
+    background-color: #012169;
+}
+
+.btn-round {
+  background-color: rgb(233, 232, 236);
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+
+.btn-small:hover {
+    box-shadow: -2px -2px 8px white,
+     -2px -2px 12px rgba(255, 255, 255, 0.5),
+      inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+       2px 2px 8px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+}
+
+.btn-small:hover span {
+    display: inline-block;
+}
+
+.btn-round:hover {
+    box-shadow: inset -2px -2px 8px white,
+     inset -2px -2px 12px rgba(255, 255, 255, 0.5),
+      inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+       inset 2px 2px 8px rgba(0, 0, 0, 0.15);
+    color: #7289ab;
+}
+
+.button-center
+{
+    justify-content: center;
+    text-align: center;
+}
+
+.bttn-def {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 14px 42px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    box-shadow: -2px -2px 8px white, -2px -2px 12px rgba(255, 255, 255, 0.5), inset 2px 2px 4px rgba(255, 255, 255, 0.1), 2px 2px 8px rgba(0, 0, 0, 0.15);
+    transition: 0.4s;
+}
+
+.bttn-def:hover {
+    color: #7289ab;
+    box-shadow: inset -2px -2px 8px white, inset -2px -2px 12px rgba(255, 255, 255, 0.5), inset 2px 2px 4px rgba(255, 255, 255, 0.1), inset 2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.bttn-def:hover span {
+    display: inline-block;
+    transform: scale(0.98);
+}
+
